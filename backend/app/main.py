@@ -28,14 +28,13 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "https://shinchan-mystery-files-frontend.onrender.com",
+        "http://localhost:5173",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_origins=[
-    "http://localhost:5173",
-    "https://shinchan-mystery-files-frontend.onrender.com",
-],
 )
 
 
