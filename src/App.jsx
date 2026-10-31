@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 const initialCases = [
   { id: "RES-001", title: "Government Scholarship Research", category: "Education", sources: 4, status: "In progress", date: "Today", tone: "yellow" },
